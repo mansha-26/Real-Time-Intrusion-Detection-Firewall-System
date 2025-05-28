@@ -1,0 +1,25 @@
+Introduction
+This project implements a simple Scam IP Detection System using Python. The system checks a list of IP addresses against a database of known scam or malicious IPs. It logs the results, indicating whether each IP is flagged as scam/malicious or is clean. This tool helps investigators and network administrators quickly identify suspicious IP addresses and maintain a record of all checks performed.
+
+Explanation of the Code
+Input List of IP Addresses:
+The code defines a list of IP addresses (ip_list) that need to be checked for malicious activity.
+
+Scam IP Database:
+The system uses a file called scam_ips.txt which contains a list of known scam or malicious IP addresses (one per line).
+
+IP Checking Logic:
+For each IP in the input list, the code:
+
+Checks if the IP exists in scam_ips.txt using the is_scam_ip function.
+If the IP is found, it prints and logs that the IP is flagged as scam/malicious.
+If not found, it prints and logs that the IP is clean.
+Logging:
+All results are saved in detection.log with a timestamp, providing a historical record of all checks.
+
+Output:
+
+The console displays the status of each IP (scam/malicious or clean).
+The log file keeps a detailed record for future reference and investigation.
+In summary:
+This code automates the process of checking multiple IP addresses against a scam IP database, making it easier to monitor and investigate potential threats in a network.
